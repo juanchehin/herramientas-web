@@ -1,3 +1,0 @@
-4.2.0
-
-This is the current version of Font Awesome used on Pastel Notification
