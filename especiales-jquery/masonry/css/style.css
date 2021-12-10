@@ -1,0 +1,15 @@
+html,body{
+    background-color: #E9E9E9;
+}
+
+.grid-item{
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
