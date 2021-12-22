@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="plugins/swipebox/css/swipebox.min.css">
+    <link rel="stylesheet" href="plugins/flexdatalist/jquery.flexdatalist.min.css">
 
   </head>
   <body>
@@ -18,29 +18,37 @@
       <hr>
     </div>
 
-    <p>Esta pagina contendra imagenes con links las cuales tendran las animaciones de swipebox</p>
+    <input type='text'
+       placeholder='Programming language name'
+       class='flexdatalist'
+       data-min-length='1'
+       list='languages'
+       name='language'>
 
-    <a href="img/image-1.jpg" class="swipebox" title="My Caption">
-      Imagen 1
-    </a>
+  <datalist id="languages">
+    <option value="PHP">PHP</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Cobol">Cobol</option>
+    <option value="C#">C#</option>
+    <option value="C++">C++</option>
+    <option value="Java">Java</option>
+    <option value="Pascal">Pascal</option>
+    <option value="FORTRAN">FORTRAN</option>
+    <option value="Lisp">Lisp</option>
+    <option value="Swift">Swift</option>
+  </datalist>
 
-    <a href="img/image-2.jpg" class="swipebox" title="My Caption">
-      Imagen 2
-    </a>
 
-    <a href="img/image-3.jpg" class="swipebox" title="My Caption">
-      Imagen 3
-    </a>
+  <hr>
 
-    <a href="img/image-4.jpg" class="swipebox" title="My Caption">
-      Imagen 4
-    </a>
+  <input type="text" class="flexdatalist form-control" data-data="data/paises.json" data-search-in="name" data-min-length="1s">
+
 
     <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
     <script src="https://releases.jquery.com/git/jquery-2.x-git.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="plugins/swipebox/js/jquery.swipebox.min.js" ></script>
+    <script src="plugins/flexdatalist/jquery.flexdatalist.min.js" ></script>
   
 
     <script src="app.js" charset="utf-8"></script>
